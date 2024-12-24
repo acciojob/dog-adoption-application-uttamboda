@@ -8,6 +8,52 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <div class="form-container">
+        <h2>Dog Adoption Application Form</h2>
+        <form action="#" method="POST">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+
+            <!-- Checkbox: Have you ever lived with a Dog before? -->
+            <div class="form-group">
+                <label for="lived-with-dog">
+                    <input type="checkbox" id="lived-with-dog" name="lived-with-dog"> Have you ever lived with a Dog before?
+                </label>
+            </div>
+
+            <!-- Multi-select for Preferred Breeds -->
+            <div class="form-group">
+                <label for="preferred-breeds">Please select your preferred breeds</label>
+                <select id="preferred-breeds" name="preferred-breeds[]" multiple required>
+                    <option value="Labrador">Labrador</option>
+                    <option value="Golden Retriever">Golden Retriever</option>
+                    <option value="German Shepherd">German Shepherd</option>
+                    <option value="Beagle">Beagle</option>
+                    <option value="Bulldog">Bulldog</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
